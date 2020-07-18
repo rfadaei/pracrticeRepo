@@ -1,1 +1,70 @@
+package Basics;
 
+public class AssignmentTwo {
+
+	public static void main(String[] args) {
+
+		System.out.println("----------Question 1---------");
+		
+		String webAddress = "www.google.biz";
+		
+		if (webAddress.contains(".com")) {
+			System.out.println("The address is for a company.");
+		} else if (webAddress.contains(".gov")) {
+			System.out.println("The address is for a governmental entity.");
+		} else if (webAddress.contains(".edu")) {
+			System.out.println("The address is for a university.");
+		} else if (webAddress.contains(".org")) {
+			System.out.println("The address is for an organization.");
+		} else {
+			System.out.println("The address is for another entity.");
+		}
+		
+		System.out.println("-----------Questiosn 2----------");
+		
+		String year = "36";
+		
+		if (year.length() == 2) {
+			System.out.println(Integer.parseInt(year) + 2000);
+		} else if (year.length() == 4) {
+			System.out.println(Integer.parseInt(year));
+		} else {
+			System.out.println("The year is not valid");
+		}
+		
+		System.out.println("-------Question 3-------");
+		
+		double temprature = (int) -5.0;
+		
+		if (temprature >= 90) {
+			System.out.println("It is probabely summer.");
+		} else if (temprature >= 70 && temprature <90) {
+			System.out.println("It is probabely spring.");
+		} else if (temprature >= 50 && temprature < 70) {
+			System.out.println("It is probabely fall.");
+		} else if (temprature < 50 && temprature >= 0) {
+			System.out.println("It is probabely winter");
+		} else if (temprature < 0 ) {
+			System.out.println("the temperature entered is outside the valid range.");
+		}
+		
+		System.out.println("----------------");
+		
+		int a = 11;
+		int b = 9;
+		String operation = "divide";
+		
+		if (operation.contains("add") || operation.contains("+")) {
+			System.out.println(a + b);
+		} else if (operation.contains("minus") || operation.contains("-")) {
+			System.out.println(a - b); 
+		} else if (operation.contains("multiply") || operation.contains("*")) {
+			System.out.println(a * b);
+		} else if (operation.contains("divide") || operation.contains("/")) {
+			System.out.println(a / b);
+		} else {
+			System.out.println("Operation is not supported.");
+		}
+	}
+
+}
